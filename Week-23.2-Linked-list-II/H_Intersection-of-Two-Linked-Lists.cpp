@@ -47,34 +47,34 @@ public:
 
 //Method 3:- Two pass approach
 //T.C.=O(N+M) || S.C.=O(1)
-// Node* getIntersectionNode(Node* headA, Node* headB){
-//     Node* tempA= headA;
-//     Node* tempB= headB;
+Node* getIntersectionNode(Node* headA, Node* headB){
+    Node* tempA= headA;
+    Node* tempB= headB;
 
-//     int count=0;
-//     while(tempA!=tempB){
+    int count=0;
+    while(tempA!=tempB){
      
-//         tempA=tempA->next;
-//         tempB=tempB->next;
+        tempA=tempA->next;
+        tempB=tempB->next;
 
-//         if(tempA==NULL){
-//             tempA=headB;
-//             count++;
-//         }
+        if(tempA==NULL){
+            tempA=headB;
+            count++;
+        }
 
-//         if(tempB==NULL){
-//             tempB=headA;
-//         }
+        if(tempB==NULL){
+            tempB=headA;
+        }
 
-//         if(count==2) return NULL;
-//     }
-//     return tempA;
+        if(count==2) return NULL;
+    }
+    return tempA;
 
-// }
+}
 
 
 
-//Method 2:- Three pass approach
+//Method 2:- Three pass approachh
 //T.C.=O(N+M+ max(M,N))  ||  S.C.=O(N)
 // int length(Node* head){
 //     Node* temp=head;
@@ -121,25 +121,25 @@ public:
 
 //Method 1:- Two pass approach with set
 //T.C.=O(N+M) || S.C.=O(N)
-Node* getIntersectionNode(Node* headA, Node* headB){
-    Node* tempA=headA;
-    Node* tempB=headB;
+// Node* getIntersectionNode(Node* headA, Node* headB){
+//     Node* tempA=headA;
+//     Node* tempB=headB;
 
-    set<Node*> st;
+//     set<Node*> st;
 
-    while(tempA!=NULL){
-        st.insert(tempA);
-        tempA=tempA->next;
-    }
+//     while(tempA!=NULL){
+//         st.insert(tempA);
+//         tempA=tempA->next;
+//     }
 
-    while(tempB!=NULL){
-        if(st.count(tempB)){
-            return tempB;
-        }
-        tempB=tempB->next;
-    }
-    return NULL;
-}
+//     while(tempB!=NULL){
+//         if(st.count(tempB)){
+//             return tempB;
+//         }
+//         tempB=tempB->next;
+//     }
+//     return NULL;
+// }
 
 
 int main() {
