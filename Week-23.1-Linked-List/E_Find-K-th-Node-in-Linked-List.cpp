@@ -42,6 +42,8 @@ public:
     Implement only the function below.
 */
 int findKth(Node* head, int k){
+
+    if(head==NULL) return -1;
     Node* temp=head;
 
     for(int i=1;i<k;i++){

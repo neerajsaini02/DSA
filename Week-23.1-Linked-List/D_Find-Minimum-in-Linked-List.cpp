@@ -45,7 +45,7 @@ int findMin(Node* head){
     if(head==NULL) return -1;
 
     auto temp=head;
-    int ans;
+    int ans=INT_MAX;
 
     while(temp!=NULL){
        ans=min(ans,temp->val);
