@@ -40,6 +40,8 @@ public:
 
 
 //Method 2:- One pass approach
+//T.C.=O(N)
+
 Node* kthFromEnd(Node* head, int k){
     Node* slow=head;
     Node* fast=head;

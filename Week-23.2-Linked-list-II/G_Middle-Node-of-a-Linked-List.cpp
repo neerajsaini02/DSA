@@ -43,6 +43,7 @@ public:
 //T.C. = O(N)
 Node* findMiddle(Node* head){
 
+    //  When ll is empty
     if(head==NULL) return NULL;
 
     //For getting the first middle (if second middle is asked we just change fast=head)
