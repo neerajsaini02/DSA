@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"c:\\Users\\Saini\\OneDrive\\Desktop\\100x Dsa\\Week 4\\c.cpp","tests":[{"id":1790245822713,"input":"6\n7 3 4 5 3 10\n","output":"3 2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Saini\\OneDrive\\Desktop\\100x Dsa\\Week 4\\c.cpp","group":"local","local":true}
