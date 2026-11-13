@@ -46,8 +46,8 @@ Node* kthFromEnd(Node* head, int k){
     Node* slow=head;
     Node* fast=head;
 
-    //Move the fast to k+1th node
-    for(int i=1;i<k+1;i++){
+    //Move the fast to k steps
+    for(int i=1;i<=k;i++){
         fast=fast->next;
     }
 
